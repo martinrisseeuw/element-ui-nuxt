@@ -13,14 +13,23 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: [
+    '~assets/css/reset.sass',
+    '~assets/css/elements-ui.scss',
+    '~assets/css/typography.sass',
+  ],
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: false,
+  plugins: [
+    { src: '~/plugins/element-ui', ssr: true }
+  ],  
   /*
   ** Build configuration
   */
   build: {
+    vendor: ['element-ui'],
     /*
     ** Run ESLint on save
     */

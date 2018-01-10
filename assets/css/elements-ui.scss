@@ -1,0 +1,24 @@
+/* theme color */
+$--color-primary: #4A3CD8;
+
+/* icon font path, required */
+$--font-path: '../fonts';
+
+@import "../../node_modules/element-ui/packages/theme-chalk/src/index";
+
+.el-date-editor.el-input, .el-date-editor.el-input__inner,
+.el-input-number,
+.el-select {
+  width: 100%;
+}
+
+.el-form-item {
+  margin-bottom: 22px;
+}
+.el-form-item__label {
+  line-height: 26px;
+}
+
+.el-form--label-top .el-form-item__label {
+  padding: 0;
+}
